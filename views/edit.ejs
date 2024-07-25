@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Post</title>
+    <link rel="stylesheet" href="/public/edit_style.css" />
+    <link rel="icon" type="image/x-icon" href="/public/favicon/edit-text.png" />
+  </head>
+  <body>
+    <form method="post" action="http://localhost:8080/posts/<%=post.id%>?_method=PATCH">
+
+      <p id="user_id">User ID: <%=post.id%></p>
+
+      <div>
+        <label for="name">User Name :</label>
+        <input type="text" name="name" id="name" value="<%=post.name%>" />
+      </div>
+
+      <div>
+        <label for="age">User Age :</label>
+        <input type="text" name="age" id="age" value="<%=post.age%>" />
+      </div>
+
+
+      <div>
+        <label for="name">Post Content:</label>
+        <textarea name="content" id="" cols="46" rows="10"><%=post.content%></textarea>
+      </div>
+
+      <!-- <p class="textarea">
+        Post Content :
+        <textarea name="content" id="" cols="25" rows="10"><%=post.content%></textarea>
+      </p> -->
+      <button>Edit Post</button>
+    </form>
+  </body>
+</html>

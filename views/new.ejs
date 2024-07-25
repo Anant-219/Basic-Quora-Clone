@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Each Post</title>
+    <link rel="stylesheet" href="/public/new_style.css" />
+    <link rel="icon" type="image/x-icon" href="/public/favicon/tab.png" />
+    
+  </head>
+  <body>
+    <form method="post" action="http://localhost:8080/posts">
+
+      <div>
+        <label for="name">User Name :</label>
+        <input type="text" name="name" id="name" value="" />
+      </div>
+
+      <div>
+        <label for="age">User Age :</label>
+        <input type="text" name="age" id="age" value="" />
+      </div>
+
+
+      <div>
+        <label for="name">Post Content:</label>
+        <textarea name="content" id="" cols="46" rows="10"></textarea>
+      </div>
+
+      <button>Submit Post</button>
+    </form>
+  </body>
+</html>
